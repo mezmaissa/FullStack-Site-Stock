@@ -1,0 +1,28 @@
+
+<div class="container">
+
+    <div class="inp">
+    <mat-form-field appearance="fill">
+        <mat-label>Nom produit :</mat-label>
+        <input matInput type="text" id="name" name="name" #name >
+      </mat-form-field>
+    </div>
+    <div class="inp">
+      <mat-form-field appearance="fill">
+        <mat-label>Prix :</mat-label>
+        <input matInput type="text" id="price" name="price" #price >
+      </mat-form-field>
+    </div>
+
+    <div class="inp">
+      <mat-form-field appearance="fill">
+        <mat-label>Stock :</mat-label>
+        <input matInput type="text" id="stock" name="stock" #stock >
+      </mat-form-field>
+    </div>
+</div>
+
+<div class="container">
+<button mat-raised-button class="btn" (click)="ajoutFunction(name.value, price.value, stock.value)" >Ajouter un produit</button>
+<a mat-raised-button class="btn" routerLink="/home">Retour</a>
+</div>
